@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataLabel Pro - Разметка данных</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo-link">
+                <img src="images/logo.PNG" alt="DataLabel Pro Logo" class="logo-image">
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">О разметке</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#advantages">Преимущества</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Станьте частью будущего <span id="typing-effect"></span></h1>
+                <p class="subtitle">Приглашаем специалистов по разметке данных в нашу команду для участия в проектах по развитию искусственного интеллекта. Ваши задачи будут включать обработку различных типов данных: классификацию изображений, сегментацию видео и подготовку текстовой информации для обучения нейронных сетей.</p>
+                <a href="#contact" class="btn">Отправить заявку</a>
+            </div>
+        </section>
+
+        <section id="about" class="about fade-in">
+            <div class="container">
+                <div class="about-content">
+                    <h2>Что такое разметка данных?</h2>
+                    <p>Разметка данных — это ключевой этап в разработке систем искусственного интеллекта, заключающийся в преобразовании необработанной информации в структурированные данные. Этот процесс, также известный как аннотирование, позволяет формировать обучающие выборки (датасеты), на основе которых алгоритмы машинного обучения распознают закономерности, объекты и контекст.
+Данное направление является фундаментом для таких прорывных технологий, как компьютерное зрение в беспилотных автомобилях, предиктивная диагностика в медицине и персонализированные рекомендательные сервисы</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" alt="Команда специалистов работает за компьютерами">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects fade-in">
+            <div class="container">
+                <h2>С какими проектами мы работаем</h2>
+                <div class="project-cards">
+                    <div class="card fade-in">
+                        <h3>Разметка фото и видео</h3>
+                        <p>Выделение объектов на изображениях и видео, классификация контента для обучения систем компьютерного зрения.</p>
+                    </div>
+                    <div class="card fade-in">
+                        <h3>Нарезка видео</h3>
+                        <p>Сегментация видеофайлов на смысловые фрагменты для последующего анализа и обработки.</p>
+                    </div>
+                    <div class="card fade-in">
+                        <h3>Поиск и подбор контента</h3>
+                        <p>Подбор изображений и других данных по заданным критериям для наполнения датасетов.</p>
+                    </div>
+                    <div class="card fade-in">
+                        <h3>Генерация текста</h3>
+                        <p>Создание и аннотирование текстовых данных для обучения языковых моделей, чат-ботов и других AI-систем.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="advantages" class="advantages fade-in">
+            <div class="container">
+                <h2>Наши преимущества</h2>
+                <ul>
+                    <li class="fade-in"><strong>Персональный координатор:</strong> У вас будет куратор, который всегда поможет, ответит на вопросы и поддержит на всех этапах работы.</li>
+                    <li class="fade-in"><strong>Бесплатное обучение:</strong> Мы предоставляем все необходимые материалы и проводим обучение, чтобы вы быстро вошли в курс дела.</li>
+                    <li class="fade-in"><strong>Помощь с документами:</strong> Мы поможем с оформлением всех необходимых документов для официального сотрудничества.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="contact fade-in">
+            <div class="container">
+                <h2>Свяжитесь с нами</h2>
+
+                <div class="form-tabs">
+                    <button class="tab-btn active" data-form="form-labeler">Я исполнитель</button>
+                    <button class="tab-btn" data-form="form-client">Я заказчик</button>
+                </div>
+                
+                <div class="contact-wrapper">
+                    <div class="form-content">
+                        <!-- Форма для ИСПОЛНИТЕЛЯ -->
+                        <form id="form-labeler" class="contact-form active" action="https://formspree.io/f/xreznjbk" method="POST">
+                            <h3>Заявка на вакансию разметчика</h3>
+                            <div class="form-group">
+                                <label for="name-labeler">Ваше ФИО:</label>
+                                <input type="text" id="name-labeler" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-labeler">Номер телефона:</label>
+                                <input type="tel" id="phone-labeler" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-labeler">Электронная почта:</label>
+                                <input type="email" id="email-labeler" name="email" required>
+                            </div>
+                            <button type="submit" class="btn">Отправить заявку</button>
+                        </form>
+
+                        <!-- Форма для ЗАКАЗЧИКА -->
+                        <form id="form-client" class="contact-form" action="https://formspree.io/f/xreznjbk" method="POST">
+                            <h3>Обсудить проект</h3>
+                            <div class="form-group">
+                                <label for="name-client">Ваше имя:</label>
+                                <input type="text" id="name-client" name="name" required>
+                            </div>
+                             <div class="form-group">
+                                <label for="company-client">Название компании (необязательно):</label>
+                                <input type="text" id="company-client" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="email-client">Рабочая почта:</label>
+                                <input type="email" id="email-client" name="email" required>
+                            </div>
+                            <button type="submit" class="btn">Отправить запрос</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-contacts">
+                <h3>Наши контакты</h3>
+                <div class="footer-icons">
+                    <a href="tel:+79213714936" title="Позвонить нам">
+                        <img src="images/tel.jpg" alt="Иконка телефона">
+                    </a>
+                    <a href="https://t.me/ipolyakovairene" target="_blank" rel="noopener noreferrer" title="Написать в Telegram">
+                        <img src="images/tg.jpg" alt="Иконка Telegram">
+                    </a>
+                    <a href="mailto:kim_irene@mail.ru" title="Написать на почту">
+                        <img src="images/mail.jpg" alt="Иконка электронной почты">
+                    </a>
+                </div>
+            </div>
+          </div>
+    </footer>
+    
+    <button id="back-to-top" title="Наверх">&uarr;</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
